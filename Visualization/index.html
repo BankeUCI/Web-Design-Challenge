@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Summary</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold" href="index.html"><strong>Latitude</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"></a>
+              </li>
+              <li class="nav-item justify-content end">
+                <a class="nav-link" href="comparison.html"><strong>Comparison</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html"><strong>Data</strong></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Plots</strong></a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="temp.html">Max Temperature</a></li>
+                  <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                  <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Create container, rows and columns and add images -->
+
+      <div class="container content">
+          <div class="row">
+              <div class="col-md-8">
+                  <div class="col-md-12">
+                      <h3><strong> Summary: Latitude vs. X</strong></h3>
+                      <hr>
+                      <div class="thumbnail">
+                          <img class="img-thumbnail float-left" src="/Resources/assets/images/Fig1.png" width="50%" alt="temperature">
+                      </div>                                        
+                        <p>Weather data for over 500 cities within the Northern and Southern hemisphere was previously analyzed using Pandas and Matplotlib. Weather data was pulled from OpenWeatherMap API. The data contains weather information for more than 540 cities.
+                          The data contains the following information: City Name, Country, Date,Longitude, Latitude and weather conditions such as Cloudiness, Humidity, Max Temperature and Wind Speed.
+                        </p>
+
+                        <p> Matplotlib was used to plot results of analysis from the weather data. The analysis was focused on the relationship between weather conditions ( Cloudiness, Humidity, Temperature and Wind Speed) in cities and their latitudes. 
+                          The weather data plots captured weather conditions for 01/05/2017. This project creates a dashboard that provides visualizations of analysis from the weather data. It contains plots and insights gained from analysis.
+                        </p>                  
+                  </div>
+              </div>
+              <!-- Adjustments -->
+              <div class="col-md-4">
+                  <div class="col-md-12">
+                      <h3><strong>Visualizations</strong></h3>
+                      <hr>
+                      <div class="row">
+                          <div class="col-3 col-md-6"> 
+                              <a href="temp.html"><img src="/Resources/assets/images/Fig1.png" width="100%" alt="temperature">
+                                </a>
+                          </div>
+
+                            <div class="col-3 col-md-6">
+                            <a href="humidity.html"><img src="/Resources/assets/images/Fig2.png" width="100%" alt="humidity">                                
+                            </a>
+                            </div>
+
+                            <div class="col-3 col-md-6">
+                            <a href="cloudiness.html"><img src="/Resources/assets/images/Fig3.png" width="100%" alt="cloudiness">                                
+                            </a>
+                            </div>
+                        
+                            <div class="col-3 col-md-6">
+                            <a href="windspeed.html"><img src="/Resources/assets/images/Fig4.png" width="100%" alt="wind speed">                                
+                            </a>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <!-- BOUNS -->
+      <!-- The sidebar -->
+      <div class="sidenav">
+        <a href="index.html"><strong>Summary</strong></a>
+        <a href="comparison.html"><strong>Comparison</strong></a>
+        <a href="data.html"><strong>Data</strong></a>
+        <a href="#"><strong>Plots</strong></a>
+        <button class="dropdown-btn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="temp.html">Max Temperature</a>
+          <a href="humidity.html">Humidity</a>
+          <a href="cloudiness.html">Cloudiness</a>
+          <a href="windspeed.html">Wind Speed</a>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="page-footer font-small footer-dark">
+          <div class="footer-copyright text-center py-3">© Copyright Bootcamp 2021.
+          </div>
+      </footer> 
+  </body>
+</html>
